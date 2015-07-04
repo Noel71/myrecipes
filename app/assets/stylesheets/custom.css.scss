@@ -25,7 +25,12 @@ $navbar-default-color: $light-orange;
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 80px;
+  
+}
+
+.logo {
+  margin-left: 5px;
   
 }
 
@@ -39,6 +44,7 @@ body {
 .nav-item1 {
   
     margin-left: 10px;
+    margin-right: 10px;
     background-color: #79b044;
 }
 
@@ -77,6 +83,16 @@ p.lead {
 .left {
   text-align: left;
   letter-spacing: .5px;
+  background: #afcf1b;
+}
+
+.bgColor {
+  
+  background: #afcf1b;
+  padding: 5px;
+  
+  
+  
 }
 
 .footer {

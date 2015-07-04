@@ -1,66 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VisionForUs</title>
+  <title>DeliciousRecipes</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   
-    <header class="navbar navbar-inverse navbar-fixed-top">
-      
-      <div class="container">
-        
-        <div class="navbar-header">
-					
-						
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span><!-- line-->
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-							
-						<%= link_to "Vision For Us", "", class:"btn btn-lg btn-success", id:"logo" %>
-						
-															
-					</div><!--navbar-header-->
-					
-					      <div class="collapse navbar-collapse nav-item">
-								
-					        <ul class="nav navbar-nav navbar-right">
-									
-										<li class="active nav-item1"><%= link_to "Home", "", class:"btn btn-default" %></li>
-										<li class="nav-item1"><%= link_to "Daily Reading/Articles", "", class:"btn btn-default" %></li>
-										<li class="nav-item1"><%= link_to "Today's Hope & Strength", "", class:"btn btn-default" %></li>
-										<li class="nav-item1"><%= link_to "Resources", "", class:"btn btn-default" %></li>
-										<li class="nav-item1"><%= link_to "Contact Us", "", class:"btn btn-default" %></li>
-										
-									</ul>
-									
-									
-								
-								</div><!--navbar collapse -->
-					  
-				  
-				  
-				  
-				  
-				  
-					  
-			</div><!--Container -->
-		</header>
+    <%= render 'layouts/navigation' %>
 
   <div class="container">
     
         <%= yield %>
         
   
-  <div class="footer">
-    
-    <p>&copy; All rights Reserved by Noel Selva@Travel Web Source Inc.</p>
-  </div>
+  <%= render 'layouts/footer' %>
 
   </div><!-- Contents -->
 
